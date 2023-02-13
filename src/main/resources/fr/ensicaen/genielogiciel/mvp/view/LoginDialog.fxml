@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="495.0" maxWidth="632.0" minHeight="495.0" minWidth="632.0" prefHeight="495.0" prefWidth="632.0" stylesheets="@LoginDialog.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensicaen.genielogiciel.mvp.view.LoginView">
+   <children>
+        <Label alignment="CENTER" layoutX="216.0" layoutY="107.0" prefHeight="24.0" prefWidth="200.0" styleClass="text" text="%login.message.text">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+         </font></Label>
+        <TextField fx:id="_nickName" layoutX="216.0" layoutY="149.0" prefWidth="200.0" />
+      <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="291.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ensi_transpa.png" />
+         </image>
+      </ImageView>
+        <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="216.0" layoutY="345.0" onAction="#onClickOnStartGame" opacity="0.89" prefHeight="47.0" prefWidth="200.0" text="%launch.button.text">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+         </font></Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="141.0" layoutY="415.0" onAction="#onClickOnStartGame" opacity="0.89" prefHeight="30.0" prefWidth="150.0" text="%highscore.button.text">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="341.0" layoutY="415.0" onAction="#onClickOnSettings" opacity="0.89" prefHeight="30.0" prefWidth="150.0" text="%settings.button.text">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+   <styleClass>
+      <String fx:value="Pane" />
+      <String fx:value="dialog" />
+   </styleClass>
+</Pane>

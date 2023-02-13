@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="632.0" styleClass="Pane" stylesheets="@Settings.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensicaen.genielogiciel.mvp.view.SettingsView">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="252.0" layoutY="77.0" text="%settings.button.text" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <MenuButton alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="235.0" mnemonicParsing="false" text="%language.menu.text" textAlignment="CENTER">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#setLanguageFrench" onMenuValidation="#setLanguageFrench" text="Français" />
+          <MenuItem mnemonicParsing="false" onAction="#setLanguageEnglish" onMenuValidation="#setLanguageEnglish" text="English" />
+        </items>
+      </MenuButton>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="407.0" mnemonicParsing="false" onAction="#onClickOnReturn" text="%return.button.text" textAlignment="CENTER" />
+   </children>
+</Pane>
